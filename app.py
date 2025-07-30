@@ -30,4 +30,4 @@ from langchain.chains import create_retrieval_chain
 document_chain = prompts|llm|output_parser
 
 if input_txt:
-    st.write(document_chain.invoke({"context":input_txt, "question":input_txt}))
+    st.write(document_chain.invoke({"question":input_txt}))
